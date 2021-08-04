@@ -1,0 +1,7 @@
+Inicia-se escrevendo um teste funcional, que não irá passar, já que
+não há nada implementado. Então escrevemos um teste de unidade que também
+irá falhar. Agora precisamos escrever um código mínimo até que passe no teste 
+e após isso podemos refatorar se for necessário. Voltamos para o teste 
+funcional, que se não passar, repetimos o ciclo descrito acima, porém se 
+passar podemos verificar se o código precisa de refatoração, podendo 
+repetir o ciclo do bloco de teste de unidade ou seguir para um novo teste.
