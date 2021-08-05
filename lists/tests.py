@@ -7,10 +7,7 @@ class HomePageTest(TestCase):
     def test_uses_home_template(self):
         response = self.client.get('/')        
         self.assertTemplateUsed(response, 'home.html')
-    
-    def test_only_saves_items_when_necessary(self):
-        self.client.get('/')
-        self.assertEqual(Item.objects.count(), 0)
+
 
 class ItemModelTest(TestCase):
 
@@ -46,6 +43,7 @@ class ListViewTest(TestCase):
 
         self.assertContains(response, 'itemey 1')
         self.assertContains(response, 'itemey 2')
+
 
 class NewListTest(TestCase):
     
